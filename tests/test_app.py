@@ -3,8 +3,10 @@ from streamlit.testing.v1 import AppTest
 # Deutlich hoeherer Timeout als in den Geschwister-Repos: der Kaltstart-
 # T-Sweep (6 Inits x 4 Sequenzlaengen bis T=150, RNN UND LSTM) braucht auf
 # einem langsamen CI-Runner mehrere Minuten (siehe
-# feedback_expensive_sweep_needs_visible_spinner.md).
-_APP_TIMEOUT = 300
+# feedback_expensive_sweep_needs_visible_spinner.md). 300s reichte auf der
+# Linux-CI NICHT (322,95s gemessen, CI-Runner ist ca. 1,8x langsamer als
+# lokal) - auf 600s mit Sicherheitsmarge erhoeht.
+_APP_TIMEOUT = 600
 
 
 def _fresh():
