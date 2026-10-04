@@ -122,12 +122,13 @@ Erfolgsquote nach dem Training).
 
 ## Tests
 
-29 Tests, `python -m pytest tests/ -v` (Laufzeit mehrere Minuten wegen der teuren Sweeps):
+33 Tests, `python -m pytest tests/ -v` (Laufzeit mehrere Minuten wegen der teuren Sweeps):
 - `test_scenario.py` – Reproduzierbarkeit, Signalposition, Klassenbalance.
 - `test_model.py` – Forward/Backward, Gradienten-Check, Gradientennorm-Vergleich,
   Korrektheits-Kette, Curriculum-Rauchtest.
 - `test_evaluation.py` – Sweep-Funktionen mit billigen Parametern (Korrektheit, nicht die
   offiziellen Zahlen).
+- `test_oracle_bptt.py` – unabhängige Orakel: Complex-Step-Gradienten (LSTM/GRU/RNN) und Zellzustand-Normen, eigener LSTM-Trainer, Lehrbuch-Adam.
 - `test_claims.py` – jede Zahl oben nachgerechnet, mit Toleranzband (Modul-Fixtures berechnen
   jeden teuren Sweep nur einmal).
 - `test_presets.py`, `test_app.py` – Presets, Regler-Extremwerte, Footer.
