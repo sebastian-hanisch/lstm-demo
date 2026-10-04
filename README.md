@@ -19,7 +19,7 @@ Perceptron (WURZEL)                              [gebaut]
       ├─ CNN                                     [gebaut]
       └─ RNN                                     [gebaut]
            └─ LSTM                               [DIESES STÜCK]
-                └─ Attention/Transformer         [nicht gebaut]
+                └─ Attention/Transformer         [gebaut]
 ```
 
 **Ergebnis in Kürze:** Strukturell hält das LSTM einen dramatisch stärkeren Gradienten über die
@@ -171,3 +171,7 @@ streamlit run app.py
   Statistical Machine Translation.* EMNLP 2014, 1724–1734 (GRU – Nebenvergleich).
 - Bengio, Y., Louradour, J., Collobert, R. & Weston, J. (2009). *Curriculum Learning.*
   Proceedings of ICML 2009.
+
+---
+
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Neuronale Netze: vom Perceptron zum Transformer](https://sebastianhanisch.net/konzepte-neuronale-netze.html).

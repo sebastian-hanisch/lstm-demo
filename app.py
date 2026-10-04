@@ -79,8 +79,8 @@ st.markdown(
     "kann der Fehler über viele Zeitschritte fast unverändert zurückfließen."
 )
 st.caption(
-    "Stück 5 (Kind von RNN) der 'Neuronale Netze'-Reihe. Geplantes Folgestück (noch nicht "
-    "gebaut): Attention/Transformer - dieselbe Aufgabe, unabhängig von T."
+    "Stück 5 (Kind von RNN) der 'Neuronale Netze'-Reihe. Folgestück: "
+    "[Attention/Transformer](https://sebastianhanisch-attention-transformer-demo.streamlit.app/) - dieselbe Aufgabe, unabhängig von T."
 )
 
 with st.expander("So funktioniert das LSTM", expanded=True):
@@ -270,7 +270,7 @@ $h_t = \tanh(c_t)$ - ein RNN mit Restverbindung, kein gewöhnliches Elman-RNN.
 
 st.markdown("---")
 st.caption(
-    "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) "
-    "– Operations Research und Machine Learning. Interesse an einer maßgeschneiderten Lösung "
-    "für Ihr Unternehmen? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html)"
+    "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
+    "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
+    "Mehr zur Reihe: [Neuronale Netze: vom Perceptron zum Transformer](https://sebastianhanisch.net/konzepte-neuronale-netze.html)."
 )

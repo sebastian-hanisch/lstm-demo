@@ -23,7 +23,7 @@ def test_app_runs_without_exception():
 def test_footer_is_present():
     at = _fresh()
     captions = [c.value for c in at.caption]
-    assert any("Sebastian Hanisch" in c and "Kontakt aufnehmen" in c for c in captions)
+    assert any("Sebastian Hanisch" in c and "Über mich" in c for c in captions)
 
 
 def test_preset_kurz_shows_high_accuracy_for_both():
